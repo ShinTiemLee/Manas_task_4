@@ -10,11 +10,10 @@ void setup()
 
 void loop()
 {
-  int V_range=analogRead(TempPin); // voltage output mapped from 0 to 1024
-  float Vout=((V_range)*(5000.0/1024.0)); //voltage output given by sensor in millivolts
-  int Temp_cel=((Vout-500.0)/10.0);  //voltage to temp in celcius conversion
+  int V_analog=analogRead(TempPin); // voltage output ranges from 0 to 1023
+  int V_range=map(V_analog,0,1023,0,255); //voltage output mapped to range from 0 to 255 
   Wire.beginTransmission(Address);
-  Wire.write(Temp_cel);
+  Wire.write(V_range);
   Wire.endTransmission();
   delay(1000);
 }
