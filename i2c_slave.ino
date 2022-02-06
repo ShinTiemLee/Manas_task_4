@@ -1,5 +1,4 @@
 #include<Wire.h>
-
 #define Led1 9     // green led
 #define Led2 3     // red led
 #define Address 1  //slave id
