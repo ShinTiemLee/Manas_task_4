@@ -14,3 +14,9 @@
 ref: https://www.tinkercad.com/things/4HkxvPFGmX1
 
 circuit ref: uart_circuit.png
+
+*subtask3:*(SPI communication: Master sends the state of the button (1/0) to the slave which based on it sets the led as on or off)
+
+ref: https://www.tinkercad.com/things/iGLTPN2DAzg
+
+circuit ref:spi.png
